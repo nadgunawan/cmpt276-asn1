@@ -1,0 +1,76 @@
+h1{
+    color: black
+
+}
+b{
+    color: maroon;
+}
+
+  
+.boxes {
+    box-sizing:border-box;
+    height: 85vh;
+    float: left;
+    text-align: left;
+    display: flex;
+    flex-wrap: row wrap;
+    margin:2%;
+    width: 50%;
+    
+     /* three boxes (use 25% for four, and 50% for two, etc) */
+     /* if you want space between the images */
+}
+
+
+#box1{
+    padding:10px;
+    flex-grow:1; 
+    display: flex; 
+    background-color:  rgb(204, 217, 238);
+    flex-direction: row;
+    text-align:start;
+    line-height: 1.5;
+    float: left; 
+    text-align: justify;
+
+}
+
+form{
+    display:table;
+}
+#box1 input{
+    margin-left: 50px;
+    vertical-align: top;
+    text-align: right;
+    float:right;
+    width:75px;
+    font-size: 9pt;
+    padding:5px;
+}
+#box1 label{
+    top: 15px;
+    left: 10px;
+    margin-left: -90px;
+    width: 15px;
+}
+
+.middle-box{
+    flex-grow: 1;
+    display: flex; 
+    flex-direction: column;
+    
+}
+
+.middle-box div{
+    flex-grow: 1;
+    margin: 0 8px; 
+    flex-direction:column; 
+    line-height: 2.5;
+    background-color: rgb(204, 217, 238);
+    padding-left: 25px;
+}
+
+.middle-box div+div{
+    margin-top: 8px;
+
+}

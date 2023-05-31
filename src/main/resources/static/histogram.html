@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href ="stylesheets/histogram.css">
+    <script src ="js/calculate.js"> </script> 
+
+</head>
+<body>
+    <h1>  Histogram Generator </h1>
+        <div class ="boxes"> 
+            <div id="box1"> 
+                <b>Lower bounds</b> 
+                <form id="lowerBound"> <br><br> 
+                    <label for="" class="label">Max</label> <input type="text" value="100.00" onchange="boundChange(this,0)"><br><br> 
+                    <label for="" class="label">A+ </label> <input type="text" value="95.00" onchange="boundChange(this,1)"><br><br>
+                    <label for="" class="label">A  </label> <input type="text" value="90.00" onchange="boundChange(this,2)"><br><br>
+                    <label for="" class="label">A- </label> <input type="text" value="85.00" onchange="boundChange(this,3)"><br><br>
+                    <label for="" class="label">B+ </label> <input type="text" value="80.00" onchange="boundChange(this,4)"><br><br>
+                    <label for="" class="label">B  </label> <input type="text" value="75.00" onchange="boundChange(this,5)"><br><br>
+                    <label for="" class="label">B- </label> <input type="text" value="70.00" onkeydown="boundChange(this,6)"><br><br>
+                    <label for="" class="label">C+ </label> <input type="text" value="65.00" onkeydown="boundChange(this,7)"><br><br>
+                    <label for="" class="label">C  </label><input type="text" value="60.00" onkeyup="boundChange(this,8)"><br><br>
+                    <label for="" class="label">C- </label> <input type="text" value="55.00" onkeyup="boundChange(this,9)"><br><br>
+                    <label for="" class="label">D </label> <input type="text" value="50.00" onkeyup="boundChange(this,10)"><br><br>
+                    <label for="" class="label">F </label> <input type="text" value="00.00" onkeyup="boundChange(this,11)"><br><br>
+                </form>
+            </div>
+            <div class = "middle-box">
+                <div id="box2"> 
+                    <b>Histogram</b> <br>
+
+                        <label for="" class="letterGrade">A+</label>  <br> 
+                        <label for="" class="letterGrade">A</label> <br> 
+                        <label for="" class="letterGrade">A-</label> <br> 
+                        <label for="" class="letterGrade">B+</label> <br> 
+                        <label for="" class="letterGrade">B</label> <br>
+                        <label for="" class="letterGrade">B-</label><br>
+                        <label for="" class="letterGrade">C+</label><br>
+                        <label for="" class="letterGrade">C </label><br>
+                        <label for="" class="letterGrade">C-</label> <br>
+                        <label for="" class="letterGrade">D</label><br>
+                        <label for="" class="letterGrade">F</label><br>
+                
+                </div>
+                <div id="box3">
+                    <label for="">New grade:</label>
+                        <input type="text" id="newGrade"> <br>
+                        <input type="button" value="submit" id="submit">
+            
+                </div>
+            </div>
+        </div>
+
+</body>
+</html>
